@@ -1,0 +1,9 @@
+import { Controller } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
+import {<%=startCase(name)%>Service} from './<%= name %>.service';
+
+@Controller('')
+@ApiTags('<%=startCase(name)%>')
+export class <%=startCase(name)%>Controller {
+  constructor(private readonly <%=camelCase(name)%>Service: <%=startCase(name)%>Service) {}
+}

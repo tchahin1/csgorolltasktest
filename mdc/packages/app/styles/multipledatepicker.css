@@ -1,0 +1,86 @@
+.multipledate.rmdp-wrapper,
+.rmdp-container .multipledate.ep-arrow::after {
+  background-color: #374151;
+  padding: 0 !important;
+  border-radius: 6px !important;
+}
+
+.rmdp-day:hover {
+  transform: scale(1.1);
+  transition: all !important;
+}
+
+.rmdp-day span {
+  color: white;
+  font-size: 12px !important;
+  line-height: 0 !important;
+}
+
+.rmdp-day span:hover,
+.rmdp-selected span {
+  font-weight: 600;
+}
+
+.rmdp-today span {
+  background: transparent !important;
+  border: 1px solid #83a627;
+}
+
+.rmdp-selected span,
+.rmdp-today span,
+.rmdp-day span:hover {
+  border-radius: 6px !important;
+}
+
+.rmdp-day span:hover,
+.rmdp-selected span {
+  background: #83a627 !important;
+}
+
+.rmdp-header-values {
+  width: 100% !important;
+  text-align: left;
+  color: white !important;
+  margin-left: 8px !important;
+  font-weight: 600;
+}
+
+.rmdp-header {
+  margin-top: unset !important;
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+  background: #83a627;
+}
+
+.rmdp-calendar {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 6px !important;
+}
+
+.rmdp-arrow-container {
+  width: 32px !important;
+  height: 24px !important;
+}
+
+.rmdp-arrow-container:hover {
+  background-color: #425314 !important;
+  border-radius: 6px !important;
+}
+
+.rmdp-arrow-container i {
+  width: 8px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  margin-top: 8px !important;
+}
+
+.rmdp-week-day {
+  color: #83a627 !important;
+}
+
+.rmdp-year-picker,
+.rmdp-month-picker {
+  background-color: #374151 !important;
+}

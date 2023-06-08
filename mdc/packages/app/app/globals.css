@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+@import '../styles/calendar.css';
+@import '../styles/datepicker.css';
+@import 'rc-slider/assets/index.css';
+@import '../styles/multipledatepicker.css';
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  word-break: break-all;
+}
+
+.bs-tooltip-auto {
+  z-index: 999;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rbc-button-link {
+  color: white;
+}
+
+.rbc-now > .rbc-button-link {
+  color: #a4cf31;
+}
+
+.react-datepicker__time-list-item--disabled {
+  display: none;
+  visibility: hidden;
+}

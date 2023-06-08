@@ -1,0 +1,10 @@
+s# Add files here to ignore them from prettier formatting
+
+/dist
+/coverage
+packages/app/.next
+packages/digitalcoach/ios
+packages/digitalcoach/android
+packages/app/dist
+packages/cypress
+/.github

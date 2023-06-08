@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "strict": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ankora/api-client": ["libs/api-client/src/index.ts"],
+      "@ankora/common": ["libs/common/src/index.ts"],
+      "@ankora/config": ["libs/config/src/index.ts"],
+      "@ankora/config/env": ["libs/config/src/env.ts"],
+      "@ankora/core": ["libs/core/src/index.ts"],
+      "@ankora/firebase": ["libs/firebase/src/index.ts"],
+      "@ankora/models": ["libs/models/src/index.ts"],
+      "@ankora/models/prisma": ["libs/models/src/prisma.ts"],
+      "@ankora/repository": ["libs/repository/src/index.ts"],
+      "@ankora/ui-library": ["libs/ui-library/src/server.ts"],
+      "@ankora/ui-library/client": ["libs/ui-library/src/client.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

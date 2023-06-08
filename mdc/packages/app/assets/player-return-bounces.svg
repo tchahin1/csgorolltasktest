@@ -1,0 +1,26 @@
+<svg width="871" height="572" viewBox="0 0 871 572" fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" transform="matrix(1,0,0,-1,0,0)">
+  <rect width="871" height="572" fill="#76A9FA"></rect>
+  <line x1="705.185" y1="521.151" x2="705.185" y2="10" stroke="white" stroke-width="3.6973"></line>
+  <line x1="261.509" y1="521.151" x2="261.509" y2="10" stroke="white" stroke-width="3.6973"></line>
+  <path d="M761.568 523L205.125 523" stroke="white" stroke-width="3.6973"></path>
+  <path d="M759.719 521.151L759.719 10.0001M206.973 521.151L206.973 9.99998" stroke="white"
+    stroke-width="3.6973"></path>
+
+  <line x1="263.357" y1="256.795" x2="707.033" y2="256.795" stroke="white"
+    stroke-width="3.6973"></line>
+  <rect x="263.357" y="282" width="439.978" height="115.254" fill="#1E429F"></rect>
+  <rect x="263.357" y="400.897" width="439.978" height="120.254" fill="#1C64F2"></rect>
+  <rect x="263.357" y="10" width="219.989" height="276.608" fill="#374151"></rect>
+  <rect x="487.043" y="10" width="216.292" height="276.608" fill="#374151"></rect>
+  <line x1="485.194" y1="10.9243" x2="485.194" y2="285.608" stroke="white"
+    stroke-width="3.6973"></line>
+  <path d="M170 10.9243H802.238" stroke="black" stroke-width="8.31892" stroke-linecap="round"></path>
+  <line x1="704" y1="522.85" x2="1.61732e-07" y2="522.85" stroke="white" stroke-width="3.7"
+    stroke-dasharray="8 8"></line>
+  <line x1="704" y1="400.85" x2="1.61732e-07" y2="400.85" stroke="white" stroke-width="3.7"
+    stroke-dasharray="8 8"></line>
+  <line x1="704" y1="285.608" x2="1.61732e-07" y2="285.608" stroke="white" stroke-width="3.7"
+    stroke-dasharray="8 8"></line>
+</svg> 

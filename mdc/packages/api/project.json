@@ -1,0 +1,115 @@
+{
+  "name": "api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/api/src",
+  "projectType": "application",
+
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/packages/api",
+        "main": "packages/api/src/main.ts",
+        "tsConfig": "packages/api/tsconfig.app.json",
+        "tsPlugins": [
+          {
+            "name": "@nestjs/swagger/plugin",
+            "options": {
+              "classValidatorShim": true,
+              "introspectComments": true,
+              "dtoFileNameSuffix": [
+                ".dto.ts",
+                ".type.ts",
+                ".model.ts",
+                ".entity.ts"
+              ]
+            }
+          }
+        ],
+        "assets": [
+          {
+            "input": "packages/api/src/templates",
+            "glob": "**/*.!(ts)",
+            "output": "./src/templates"
+          }
+        ]
+      },
+      "configurations": {
+        "a": {
+          "optimization": false,
+          "extractLicenses": false,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "projects/api/src/environments/environment.ts",
+              "with": "libs/config/src/api/a.ts"
+            }
+          ]
+        },
+        "d": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "projects/api/src/environments/environment.ts",
+              "with": "libs/config/src/api/d.ts"
+            }
+          ]
+        },
+        "t": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "projects/api/src/environments/environment.ts",
+              "with": "libs/config/src/api/t.ts"
+            }
+          ]
+        },
+        "p": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "projects/api/src/environments/environment.ts",
+              "with": "libs/config/src/api/p.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/js:node",
+      "options": {
+        "buildTarget": "api:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "api:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/api/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/api/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
